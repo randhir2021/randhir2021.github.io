@@ -63,22 +63,38 @@ const Contact = () => {
               <CardTitle className="text-2xl font-mono text-secondary">Quick Actions</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
-              <Button variant="outline" className="w-full justify-start gap-3 h-12">
+              <Button 
+                variant="outline" 
+                className="w-full justify-start gap-3 h-12"
+                onClick={() => window.location.href = 'mailto:randhir2021@gmail.com?subject=Project Inquiry&body=Hi Randhir, I would like to discuss a project with you.'}
+              >
                 <Mail className="h-5 w-5" />
                 Send Email
               </Button>
               
-              <Button variant="outline" className="w-full justify-start gap-3 h-12">
+              <Button 
+                variant="outline" 
+                className="w-full justify-start gap-3 h-12"
+                onClick={() => window.open('https://github.com/randhir2021', '_blank')}
+              >
                 <Github className="h-5 w-5" />
                 View GitHub
               </Button>
               
-              <Button variant="outline" className="w-full justify-start gap-3 h-12">
+              <Button 
+                variant="outline" 
+                className="w-full justify-start gap-3 h-12"
+                onClick={() => window.open('https://www.linkedin.com/in/randhir-k-1b0b59b6/', '_blank')}
+              >
                 <Linkedin className="h-5 w-5" />
                 LinkedIn Profile
               </Button>
               
-              <Button variant="cyber" className="w-full justify-start gap-3 h-12">
+              <Button 
+                variant="cyber" 
+                className="w-full justify-start gap-3 h-12"
+                onClick={() => window.open('mailto:randhir2021@gmail.com?subject=Schedule a Call&body=Hi Randhir, I would like to schedule a call to discuss a project opportunity.', '_blank')}
+              >
                 <Terminal className="h-5 w-5" />
                 Schedule a Call
               </Button>

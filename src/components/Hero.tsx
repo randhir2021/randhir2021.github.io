@@ -50,13 +50,13 @@ const Hero = () => {
               {terminalText}<span className="terminal-cursor"></span>
             </div>
             <div className="text-muted-foreground">
-              DevOps Engineer | Cloud Architect | 8+ years exp.
+              DevOps Engineer | Cloud Architect | 13+ years of experience
             </div>
             <div className="text-secondary mt-2">
               Location: Pune, India
             </div>
             <div className="text-accent mt-2">
-              Specialization: AWS • Kubernetes • Terraform • CI/CD
+              Specialization: AWS • Kubernetes • Terraform • CI/CD • MLOps • LLMOps
             </div>
           </div>
         </div>
@@ -72,11 +72,20 @@ const Hero = () => {
         
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-          <Button variant="cyber" size="lg" className="group">
+          <Button 
+            variant="cyber" 
+            size="lg" 
+            className="group"
+            onClick={() => document.getElementById('experience')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             <Terminal className="mr-2 group-hover:animate-pulse" />
             View Projects
           </Button>
-          <Button variant="outline" size="lg">
+          <Button 
+            variant="outline" 
+            size="lg"
+            onClick={() => window.open('/resume-randhir-kumar.pdf', '_blank')}
+          >
             <Download className="mr-2" />
             Download Resume
           </Button>
@@ -84,13 +93,28 @@ const Hero = () => {
         
         {/* Social Links */}
         <div className="flex gap-6 justify-center">
-          <Button variant="ghost" size="icon" className="hover:text-primary transition-colors">
+          <Button 
+            variant="ghost" 
+            size="icon" 
+            className="hover:text-primary transition-colors"
+            onClick={() => window.open('https://github.com/randhir2021', '_blank')}
+          >
             <Github className="h-6 w-6" />
           </Button>
-          <Button variant="ghost" size="icon" className="hover:text-secondary transition-colors">
+          <Button 
+            variant="ghost" 
+            size="icon" 
+            className="hover:text-secondary transition-colors"
+            onClick={() => window.open('https://www.linkedin.com/in/randhir-k-1b0b59b6/', '_blank')}
+          >
             <Linkedin className="h-6 w-6" />
           </Button>
-          <Button variant="ghost" size="icon" className="hover:text-accent transition-colors">
+          <Button 
+            variant="ghost" 
+            size="icon" 
+            className="hover:text-accent transition-colors"
+            onClick={() => window.location.href = 'mailto:randhir2021@gmail.com'}
+          >
             <Mail className="h-6 w-6" />
           </Button>
         </div>
